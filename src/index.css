@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* OpenXpert brand colors - deep navy blue and light blue tones */
+    --background: 210 100% 99%;
+    --foreground: 205 100% 18%;
+
+    --card: 210 60% 98%;
+    --card-foreground: 205 100% 18%;
+
+    --popover: 210 60% 98%;
+    --popover-foreground: 205 100% 18%;
+
+    /* Deep navy blue from logo */
+    --primary: 205 100% 18%;
+    --primary-foreground: 210 100% 99%;
+
+    /* Light blue glass tones */
+    --secondary: 210 50% 95%;
+    --secondary-foreground: 205 100% 18%;
+
+    --muted: 210 40% 94%;
+    --muted-foreground: 205 30% 45%;
+
+    /* Accent blue for highlights */
+    --accent: 210 100% 88%;
+    --accent-foreground: 205 100% 18%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 100% 99%;
+
+    --border: 210 30% 90%;
+    --input: 210 30% 92%;
+    --ring: 205 100% 18%;
+
+    --radius: 1.25rem;
+
+    /* Glass effect variables */
+    --glass-bg: 210 60% 98%;
+    --glass-border: 210 40% 92%;
+    --glass-shadow: 205 20% 70%;
+    
+    /* Gradient variables */
+    --gradient-start: 210 100% 99%;
+    --gradient-mid: 210 60% 97%;
+    --gradient-end: 210 50% 95%;
+    
+    /* Glow effects */
+    --glow-primary: 205 100% 18%;
+    --glow-accent: 210 100% 88%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 205 50% 8%;
+    --foreground: 210 100% 98%;
+
+    --card: 205 40% 12%;
+    --card-foreground: 210 100% 98%;
+
+    --popover: 205 40% 12%;
+    --popover-foreground: 210 100% 98%;
+
+    --primary: 210 100% 88%;
+    --primary-foreground: 205 100% 18%;
+
+    --secondary: 205 30% 20%;
+    --secondary-foreground: 210 100% 98%;
+
+    --muted: 205 30% 20%;
+    --muted-foreground: 210 40% 70%;
+
+    --accent: 210 80% 70%;
+    --accent-foreground: 205 100% 18%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 100% 98%;
+
+    --border: 205 30% 25%;
+    --input: 205 30% 25%;
+    --ring: 210 100% 88%;
+    
+    --glass-bg: 205 40% 12%;
+    --glass-border: 205 30% 25%;
+    --glass-shadow: 205 20% 10%;
+    
+    --gradient-start: 205 50% 8%;
+    --gradient-mid: 205 40% 12%;
+    --gradient-end: 205 35% 15%;
+    
+    --glow-primary: 210 100% 88%;
+    --glow-accent: 210 80% 70%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* Custom glassmorphism utilities */
+@layer utilities {
+  .glass-card {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--glass-bg) / 0.7) 0%,
+      hsl(var(--glass-bg) / 0.5) 100%
+    );
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid hsl(var(--glass-border) / 0.3);
+    box-shadow: 
+      0 8px 32px hsl(var(--glass-shadow) / 0.1),
+      0 2px 8px hsl(var(--glass-shadow) / 0.05),
+      inset 0 1px 0 hsl(var(--glass-border) / 0.2);
+  }
+  
+  .glass-strong {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--glass-bg) / 0.9) 0%,
+      hsl(var(--glass-bg) / 0.8) 100%
+    );
+    backdrop-filter: blur(30px) saturate(200%);
+    border: 1px solid hsl(var(--glass-border) / 0.4);
+    box-shadow: 
+      0 12px 48px hsl(var(--glass-shadow) / 0.15),
+      0 4px 12px hsl(var(--glass-shadow) / 0.08),
+      inset 0 1px 0 hsl(var(--glass-border) / 0.3);
+  }
+  
+  .glow-effect {
+    box-shadow: 
+      0 0 20px hsl(var(--glow-accent) / 0.3),
+      0 0 40px hsl(var(--glow-accent) / 0.15),
+      0 0 60px hsl(var(--glow-accent) / 0.08);
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gradient-start)) 0%,
+      hsl(var(--gradient-mid)) 50%,
+      hsl(var(--gradient-end)) 100%
+    );
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-link {
+    @apply transition-colors duration-200 hover:text-primary;
+  }
+}
