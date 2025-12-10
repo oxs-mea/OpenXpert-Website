@@ -67,7 +67,7 @@ const Navigation = () => {
               </button>
 
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 glass-strong rounded-2xl overflow-hidden shadow-lg animate-slide-in-up">
+                <div className="absolute top-full left-0 mt-0 w-64 glass-strong rounded-2xl overflow-hidden shadow-lg animate-slide-in-up"> {/*changed mt-2 to mt-0 to remove gap triggering leave*/}
                   {services.map((service) => (
                     <Link
                       key={service.path}

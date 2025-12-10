@@ -168,7 +168,7 @@ const AmcSupport = () => {
         </div>
 
         {/* Animated Support Visual */}
-        <div className="glass-strong rounded-3xl p-8 max-w-5xl mx-auto mb-20 animate-slide-in-up" style={{ animationDelay: "200ms" }}>
+        {/* <div className="glass-strong rounded-3xl p-8 max-w-5xl mx-auto mb-20 animate-slide-in-up" style={{ animationDelay: "200ms" }}>
           <div className="aspect-video glass-card rounded-2xl flex items-center justify-center relative overflow-hidden">
             <div className="relative">
               <HeadphonesIcon className="w-24 h-24 text-primary/30 animate-glow-pulse" />
@@ -192,7 +192,7 @@ const AmcSupport = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Features Grid */}
@@ -290,7 +290,7 @@ const AmcSupport = () => {
       </section>
 
       {/* Pricing Tiers */}
-      <section className="container mx-auto px-6 py-20">
+      {/* <section className="container mx-auto px-6 py-20">
         <h2 className="text-4xl font-bold text-center text-foreground mb-4">
           Choose Your Support Plan
         </h2>
@@ -338,10 +338,10 @@ const AmcSupport = () => {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="container mx-auto px-6 py-20">
+      {/* <section className="container mx-auto px-6 py-20">
         <h2 className="text-4xl font-bold text-center text-foreground mb-16">
           What Our Clients Say
         </h2>
@@ -365,7 +365,7 @@ const AmcSupport = () => {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-20">

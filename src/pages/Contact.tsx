@@ -52,12 +52,12 @@ const Contact = () => {
                   <Input type="email" placeholder="john@example.com" className="glass-card" />
                 </div>
 
-                <div>
+                {/* <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     Phone
                   </label>
                   <Input type="tel" placeholder="+971 XXX XXXX" className="glass-card" />
-                </div>
+                </div> */}
 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
@@ -92,7 +92,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
+                  {/* <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/20 flex items-center justify-center flex-shrink-0">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                       <p className="text-muted-foreground">+971 XXX XXXX</p>
                       <p className="text-muted-foreground">+971 XXX XXXX</p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/20 flex items-center justify-center flex-shrink-0">

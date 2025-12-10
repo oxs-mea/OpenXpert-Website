@@ -126,7 +126,7 @@ const RmmServices = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative container mx-auto px-6 pt-32 pb-20">
+      {/* <section className="relative container mx-auto px-6 pt-32 pb-20">
         <div className="text-center mb-16 animate-slide-in-up">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             RMM Services
@@ -139,7 +139,7 @@ const RmmServices = () => {
           </p>
         </div>
 
-        {/* Animated Network Map */}
+        
         <div className="glass-strong rounded-3xl p-8 max-w-5xl mx-auto mb-20 animate-slide-in-up" style={{ animationDelay: "200ms" }}>
           <div className="aspect-video glass-card rounded-2xl flex items-center justify-center relative overflow-hidden">
             <div className="relative">
@@ -168,7 +168,7 @@ const RmmServices = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Grid */}
       <section className="container mx-auto px-6 py-20">
@@ -200,7 +200,7 @@ const RmmServices = () => {
       </section>
 
       {/* Live Status Simulation */}
-      <section className="container mx-auto px-6 py-20">
+      {/* <section className="container mx-auto px-6 py-20">
         <div className="glass-strong rounded-3xl p-8 md:p-12 max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
             Live Dashboard Preview
@@ -245,7 +245,7 @@ const RmmServices = () => {
             </div>
           )}
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Stats */}
       <section className="container mx-auto px-6 py-20">
@@ -270,7 +270,7 @@ const RmmServices = () => {
       </section>
 
       {/* Pricing Tiers */}
-      <section className="container mx-auto px-6 py-20">
+      {/* <section className="container mx-auto px-6 py-20">
         <h2 className="text-4xl font-bold text-center text-foreground mb-4">
           Choose Your Monitoring Plan
         </h2>
@@ -308,7 +308,7 @@ const RmmServices = () => {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-20">

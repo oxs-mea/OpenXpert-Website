@@ -46,10 +46,14 @@ export const ParticleField = () => {
     const drawParticles = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+      const particleColor = getComputedStyle(document.documentElement) //added particle colour
+      .getPropertyValue('--particle')
+      .trim();
+
       particles.forEach((particle) => {
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(205, 100%, 88%, ${particle.opacity})`;
+        ctx.fillStyle = `hsl(${particleColor} / ${particle.opacity})`;
         ctx.fill();
 
         // Update position

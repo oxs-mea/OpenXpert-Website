@@ -125,7 +125,7 @@ const ECommerce = () => {
         </div>
 
         {/* Animated Store Preview */}
-        <div className="glass-strong rounded-3xl p-8 max-w-5xl mx-auto mb-20 animate-slide-in-up" style={{ animationDelay: "200ms" }}>
+        {/*<div className="glass-strong rounded-3xl p-8 max-w-5xl mx-auto mb-20 animate-slide-in-up" style={{ animationDelay: "200ms" }}>
           <div className="aspect-video glass-card rounded-2xl flex items-center justify-center relative overflow-hidden">
             <ShoppingCart className="w-24 h-24 text-primary/30 animate-glow-pulse" />
             <div className="absolute top-4 right-4">
@@ -147,7 +147,7 @@ const ECommerce = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div>*/}
       </section>
 
       {/* Features Grid */}
@@ -180,7 +180,7 @@ const ECommerce = () => {
       </section>
 
       {/* Theme Playground */}
-      <section className="container mx-auto px-6 py-20">
+      {/* <section className="container mx-auto px-6 py-20">
         <div className="glass-strong rounded-3xl p-8 md:p-12 max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
             Live Theme Customizer
@@ -213,7 +213,7 @@ const ECommerce = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Conversion Features */}
       <section className="container mx-auto px-6 py-20">
@@ -242,7 +242,7 @@ const ECommerce = () => {
       </section>
 
       {/* Pricing Packages */}
-      <section className="container mx-auto px-6 py-20">
+      {/* <section className="container mx-auto px-6 py-20">
         <h2 className="text-4xl font-bold text-center text-foreground mb-4">
           Choose Your Package
         </h2>
@@ -279,7 +279,7 @@ const ECommerce = () => {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-20">

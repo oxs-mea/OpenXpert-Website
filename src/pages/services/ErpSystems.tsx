@@ -104,7 +104,7 @@ const ErpSystems = () => {
         </div>
 
         {/* Animated Dashboard Preview */}
-        <div className="glass-strong rounded-3xl p-8 max-w-5xl mx-auto mb-20 animate-slide-in-up" style={{ animationDelay: "200ms" }}>
+        {/*<div className="glass-strong rounded-3xl p-8 max-w-5xl mx-auto mb-20 animate-slide-in-up" style={{ animationDelay: "200ms" }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             {[
               { label: "Revenue", value: "$2.4M", trend: "+12%" },
@@ -122,7 +122,7 @@ const ErpSystems = () => {
           <div className="h-48 glass-card rounded-2xl flex items-center justify-center">
             <BarChart3 className="w-16 h-16 text-primary/30 animate-glow-pulse" />
           </div>
-        </div>
+        </div>*/}
       </section>
 
       {/* Modules Section */}
@@ -155,7 +155,7 @@ const ErpSystems = () => {
       </section>
 
       {/* ROI Calculator */}
-      <section className="container mx-auto px-6 py-20">
+     {/* <section className="container mx-auto px-6 py-20">
         <div className="glass-strong rounded-3xl p-8 md:p-12 max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
             Calculate Your ROI
@@ -218,7 +218,7 @@ const ErpSystems = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Features Comparison */}
       <section className="container mx-auto px-6 py-20">

@@ -62,13 +62,13 @@ const Index = () => {
         {/* Hero Section */}
         <header className="text-center mb-32 animate-slide-in-up relative">
           {/* Floating sparkle effects */}
-          <Sparkles className="absolute top-0 left-1/4 w-8 h-8 text-primary/30 animate-glow-pulse" style={{
+          <Sparkles className="absolute top-0 left-1/4 w-8 h-8 text-primary/30 " style={{
           animationDelay: "0s"
         }} />
-          <Sparkles className="absolute top-10 right-1/3 w-6 h-6 text-accent/40 animate-glow-pulse" style={{
+          <Sparkles className="absolute top-10 right-1/3 w-6 h-6 text-accent/40 " style={{
           animationDelay: "1s"
         }} />
-          <Sparkles className="absolute bottom-10 left-1/3 w-7 h-7 text-primary/20 animate-glow-pulse" style={{
+          <Sparkles className="absolute bottom-10 left-1/3 w-7 h-7 text-primary/20 " style={{
           animationDelay: "2s"
         }} />
           
@@ -78,7 +78,7 @@ const Index = () => {
           
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 tracking-tight leading-none">
             Precision. Innovation.
-            <span className="block mt-3 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent animate-glow-pulse">
+            <span className="block mt-3 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent "> {/*removed css animate-glow-pulse*/}
               Open Solutions.
             </span>
           </h1>
