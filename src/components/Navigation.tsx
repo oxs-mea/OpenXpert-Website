@@ -13,7 +13,7 @@ const Navigation = () => {
   const services = [
     { name: "ERP Systems", path: "/services/erp" },
     { name: "Custom E-Commerce", path: "/services/ecommerce" },
-    { name: "RMM Services", path: "/services/rmm" },
+    { name: "Cybersecuirty Services", path: "/services/cybersecurity" },
     { name: "AMC Support", path: "/services/amc" },
     { name: "Community Projects", path: "/services/community" },
     { name: "Web Development", path: "/services/web" },
