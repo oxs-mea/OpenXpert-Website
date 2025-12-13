@@ -19,9 +19,9 @@ const Index = () => {
     link: "/services/ecommerce"
   }, {
     icon: Shield,
-    title: "RMM Services",
+    title: "Cybersecurity Services",
     description: "Remote Monitoring and Management services ensuring your IT infrastructure operates at peak performance.",
-    link: "/services/rmm"
+    link: "/services/cybersecurity"
   }, {
     icon: Wrench,
     title: "AMC Support",
@@ -110,9 +110,9 @@ const Index = () => {
 
         {/* Services grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {services.map((service, index) => <Link key={service.title} to={service.link}>
+          {services.map((service, index) => 
               <ServiceCard icon={service.icon} title={service.title} description={service.description} delay={index * 100} />
-            </Link>)}
+            )}
         </div>
 
         {/* Trust Badges */}
