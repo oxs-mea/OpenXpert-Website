@@ -19,26 +19,7 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               Empowering businesses with secure, future-ready technology solutions.
             </p>
-            <div className="flex gap-3">
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:glow-effect transition-all"
-              >
-                <Linkedin className="w-4 h-4 text-primary" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:glow-effect transition-all"
-              >
-                <Twitter className="w-4 h-4 text-primary" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:glow-effect transition-all"
-              >
-                <Github className="w-4 h-4 text-primary" />
-              </a>
-            </div>
+            
           </div>
 
           {/* Services Column */}
@@ -59,14 +40,6 @@ const Footer = () => {
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   E-Commerce Solutions
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/rmm"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  RMM Services
                 </Link>
               </li>
               <li>

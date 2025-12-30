@@ -138,7 +138,7 @@ const ErpSystems = () => {
           {modules.map((module, index) => (
             <Card
               key={index}
-              className="group glass-card p-6 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect cursor-pointer"
+              className="group glass-card p-6 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="mb-4">
@@ -267,42 +267,30 @@ const ErpSystems = () => {
       </section>
 
       {/* Demo CTA */}
-      <section className="container mx-auto px-6 py-20">
-        <div className="glass-strong rounded-3xl p-12 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Schedule a personalized demo and see how our ERP system can revolutionize your operations.
-          </p>
-
-          {!showCalendar ? (
-            <Button
-              size="lg"
-              className="glass-card hover:glow-effect px-8 py-6 text-lg group"
-              onClick={() => setShowCalendar(true)}
-            >
-              <Calendar className="mr-2 w-5 h-5" />
-              Schedule ERP Demo
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          ) : (
-            <div className="glass-card p-8 rounded-2xl animate-scale-in">
-              <Check className="w-16 h-16 text-primary mx-auto mb-4 animate-glow-pulse" />
-              <h3 className="text-xl font-semibold text-foreground mb-2">Request Received!</h3>
-              <p className="text-muted-foreground mb-6">
-                Our team will contact you within 24 hours to schedule your personalized demo.
-              </p>
-              <Link to="/contact">
-                <Button variant="outline" className="glass-card">
-                  Contact Us Directly
-                </Button>
-              </Link>
-            </div>
-          )}
-        </div>
-      </section>
-
+<section className="container mx-auto px-6 py-20">
+  <div className="glass-strong rounded-3xl p-12 max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+      Ready to Transform Your Business?
+    </h2>
+    <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+      Schedule a personalized demo and see how our ERP system can revolutionize your operations.
+    </p>
+<a 
+  href="mailto:info@openxperts.me?subject=ERP%20System%20Demo%20Consultation&body=Hi%20OpenXperts%20Team,%0D%0A%0D%0AI%20would%20like%20to%20schedule%20a%20demo%20of%20your%20ERP%20system.%0D%0A%0D%0AName:%20%0D%0ACompany:%20%0D%0APhone:%20%0D%0APreferred%20Date/Time:%20%0D%0A%0D%0AThank%20you!"
+  className="inline-block"
+  target="_blank"
+>
+      <Button
+        size="lg"
+        className="glass-card hover:glow-effect px-8 py-6 text-lg group"
+      >
+        <Calendar className="mr-2 w-5 h-5" />
+        Schedule ERP Demo
+        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      </Button>
+    </a>
+  </div>
+</section>
       <Footer />
     </div>
   );

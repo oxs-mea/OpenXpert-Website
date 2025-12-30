@@ -13,10 +13,9 @@ const Navigation = () => {
   const services = [
     { name: "ERP Systems", path: "/services/erp" },
     { name: "Custom E-Commerce", path: "/services/ecommerce" },
-    { name: "Cybersecuirty Services", path: "/services/cybersecurity" },
+    
     { name: "AMC Support", path: "/services/amc" },
-    { name: "Community Projects", path: "/services/community" },
-    { name: "Web Development", path: "/services/web" },
+
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -97,10 +96,15 @@ const Navigation = () => {
 
           {/* Right Side Actions */}
           <div className="flex items-center gap-4">
-            <ThemeToggle />
-            <Button className="hidden lg:inline-flex glass-card hover:glow-effect">
-              Book a Consultation
-            </Button>
+  <ThemeToggle />
+  <a 
+    href="mailto:info@openxperts.me?subject=Consultation%20Request&body=Hi%20OpenXperts%20Team,%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20consultation%20to%20discuss%20my%20business%20needs.%0D%0A%0D%0AName:%20%0D%0ACompany:%20%0D%0APhone:%20%0D%0AArea%20of%20Interest:%20%0D%0A%0D%0AThank%20you!"
+    className="hidden lg:inline-flex"
+  >
+    <Button className="glass-card hover:glow-effect">
+      Book a Consultation
+    </Button>
+  </a>
 
             {/* Mobile Menu Toggle */}
             <button
@@ -113,68 +117,73 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden mt-6 glass-card rounded-2xl p-6 animate-slide-in-up">
-            <div className="flex flex-col gap-4">
+{isMenuOpen && (
+  <div className="lg:hidden mt-6 glass-card rounded-2xl p-6 animate-slide-in-up">
+    <div className="flex flex-col gap-4">
+      <Link
+        to="/"
+        className="nav-link text-muted-foreground"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Home
+      </Link>
+      <Link
+        to="/about"
+        className="nav-link text-muted-foreground"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        About Us
+      </Link>
+      
+      <div>
+        <button
+          className="nav-link text-muted-foreground flex items-center gap-1 w-full justify-between"
+          onClick={() => setIsServicesOpen(!isServicesOpen)}
+        >
+          Services
+          <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
+        </button>
+        {isServicesOpen && (
+          <div className="ml-4 mt-2 flex flex-col gap-2">
+            {services.map((service) => (
               <Link
-                to="/"
-                className="nav-link text-muted-foreground"
+                key={service.path}
+                to={service.path}
+                className="text-sm text-muted-foreground hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                {service.name}
               </Link>
-              <Link
-                to="/about"
-                className="nav-link text-muted-foreground"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About Us
-              </Link>
-              
-              <div>
-                <button
-                  className="nav-link text-muted-foreground flex items-center gap-1 w-full justify-between"
-                  onClick={() => setIsServicesOpen(!isServicesOpen)}
-                >
-                  Services
-                  <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
-                </button>
-                {isServicesOpen && (
-                  <div className="ml-4 mt-2 flex flex-col gap-2">
-                    {services.map((service) => (
-                      <Link
-                        key={service.path}
-                        to={service.path}
-                        className="text-sm text-muted-foreground hover:text-primary"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {service.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <Link
-                to="/portfolio"
-                className="nav-link text-muted-foreground"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Portfolio
-              </Link>
-              <Link
-                to="/contact"
-                className="nav-link text-muted-foreground"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-              <Button className="glass-card hover:glow-effect w-full mt-4">
-                Book a Consultation
-              </Button>
-            </div>
+            ))}
           </div>
         )}
+      </div>
+
+      <Link
+        to="/portfolio"
+        className="nav-link text-muted-foreground"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Portfolio
+      </Link>
+      <Link
+        to="/contact"
+        className="nav-link text-muted-foreground"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Contact
+      </Link>
+
+      <a 
+        href="mailto:info@openxperts.me?subject=Consultation%20Request&body=Hi%20OpenXperts%20Team,%0D%0A%0D%0AI%20would%20like%20to%20book%20a%20consultation%20to%20discuss%20my%20business%20needs.%0D%0A%0D%0AName:%20%0D%0ACompany:%20%0D%0APhone:%20%0D%0AArea%20of%20Interest:%20%0D%0A%0D%0AThank%20you!"
+        className="inline-block"
+      >
+        <Button className="glass-card hover:glow-effect w-full mt-4">
+          Book a Consultation
+        </Button>
+      </a>
+    </div>
+  </div>)}
       </div>
     </nav>
   );

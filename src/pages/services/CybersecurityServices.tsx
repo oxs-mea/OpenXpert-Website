@@ -183,7 +183,7 @@ const CybersecurityServices = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="group glass-card p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect cursor-pointer"
+              className="group glass-card p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect "
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="mb-6">
