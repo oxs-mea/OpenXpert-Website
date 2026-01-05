@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
-const RmmServices = () => {
+const CybersecurityServices = () => {
   const [showDemo, setShowDemo] = useState(false);
   const [simulationActive, setSimulationActive] = useState(false);
 
@@ -129,7 +129,7 @@ const RmmServices = () => {
       {/* <section className="relative container mx-auto px-6 pt-32 pb-20">
         <div className="text-center mb-16 animate-slide-in-up">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            RMM Services
+            Cybersecurity Services
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
             Never worry about IT infrastructure again.
@@ -183,7 +183,7 @@ const RmmServices = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="group glass-card p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect cursor-pointer"
+              className="group glass-card p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect "
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="mb-6">
@@ -335,7 +335,7 @@ const RmmServices = () => {
               <Check className="w-16 h-16 text-primary mx-auto mb-4 animate-glow-pulse" />
               <h3 className="text-xl font-semibold text-foreground mb-2">Request Received!</h3>
               <p className="text-muted-foreground mb-6">
-                Our RMM specialists will set up your trial within 24 hours.
+                Our Cybersecurity specialists will set up your trial within 24 hours.
               </p>
               <Link to="/contact">
                 <Button variant="outline" className="glass-card">
@@ -352,4 +352,4 @@ const RmmServices = () => {
   );
 };
 
-export default RmmServices;
+export default CybersecurityServices;

@@ -208,7 +208,7 @@ const AmcSupport = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="group glass-card p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect cursor-pointer"
+              className="group glass-card p-8 rounded-3xl transition-all duration-500 hover:scale-105 hover:glow-effect "
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="mb-6">
@@ -367,42 +367,30 @@ const AmcSupport = () => {
         </div>
       </section> */}
 
-      {/* CTA Section */}
-      <section className="container mx-auto px-6 py-20">
-        <div className="glass-strong rounded-3xl p-12 max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ready to Get Protected?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Start your AMC contract today and enjoy peace of mind
-          </p>
-
-          {!showSuccess ? (
-            <Button
-              size="lg"
-              className="glass-card hover:glow-effect px-8 py-6 text-lg group"
-              onClick={() => setShowSuccess(true)}
-            >
-              <Wrench className="mr-2 w-5 h-5" />
-              Get Your Quote
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          ) : (
-            <div className="glass-card p-8 rounded-2xl animate-scale-in">
-              <Check className="w-16 h-16 text-primary mx-auto mb-4 animate-glow-pulse" />
-              <h3 className="text-xl font-semibold text-foreground mb-2">Request Received!</h3>
-              <p className="text-muted-foreground mb-6">
-                Our support team will contact you within 24 hours with a customized quote.
-              </p>
-              <Link to="/contact">
-                <Button variant="outline" className="glass-card">
-                  Contact Us Directly
-                </Button>
-              </Link>
-            </div>
-          )}
-        </div>
-      </section>
+  {/* CTA Section */}
+<section className="container mx-auto px-6 py-20">
+  <div className="glass-strong rounded-3xl p-12 max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+      Ready to Get Protected?
+    </h2>
+    <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+      Start your AMC contract today and enjoy peace of mind
+    </p>
+    <a 
+      href="mailto:info@openxperts.com?subject=AMC%20Support%20Quote%20Request&body=Hi%20OpenXperts%20Team,%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20quote%20for%20AMC%20support.%0D%0A%0D%0AName:%20%0D%0ACompany:%20%0D%0APhone:%20%0D%0ACurrent%20Systems:%20%0D%0ASupport%20Requirements:%20%0D%0A%0D%0AThank%20you!"
+      className="inline-block"
+    >
+      <Button
+        size="lg"
+        className="glass-card hover:glow-effect px-8 py-6 text-lg group"
+      >
+        <Wrench className="mr-2 w-5 h-5" />
+        Get Your Quote
+        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      </Button>
+    </a>
+  </div>
+</section>
 
       <Footer />
     </div>
